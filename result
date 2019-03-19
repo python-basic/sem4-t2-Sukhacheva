@@ -1,0 +1,22 @@
+def r(t,q,n):
+    if t == '+':
+        return (q + n)
+    if t == '-':
+        return (q - n)
+    if t == '*':
+        return (q * n)
+    if t == ':':
+        return (q / n)
+
+
+def main():
+    print("Нажмите на клаватуре операцию,которую хотите вывести: '*' '-' '+' ':'")
+    p = input()
+    print("Введите первое число")
+    i = float(input())
+    print("Введите второе число")
+    d = float(input())
+    print("Ваш результат")
+    print(r(p,i,d))
+
+main()
